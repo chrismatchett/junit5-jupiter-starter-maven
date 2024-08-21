@@ -1,14 +1,6 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Build') {
-            steps {
-                // Run the Maven build
-                './mvnw clean compile'
-            }
-        }
-
         stage('Test') {
             steps {
                 // Run the JUnit tests using Maven
